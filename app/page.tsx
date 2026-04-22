@@ -251,7 +251,7 @@ export default function Portfolio() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:callmeali@duck.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5" />
