@@ -31,7 +31,7 @@ Check out the **Projects** section on my portfolio site for detailed case studie
 
 - **Portfolio:** [psymoniko.github.io/alimohammadnia](https://psymoniko.github.io/alimohammadnia)
 - **GitHub:** [github.com/PsymoNiko](https://github.com/PsymoNiko)
-- **Email:** hello@psymoniko.dev
+- **Email:** callmeali@duck.com
 
 ---
 
