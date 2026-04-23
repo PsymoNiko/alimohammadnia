@@ -7,9 +7,6 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-    "export": "next build",
-    "deploy": "pnpm run export && touch out/.nojekyll",
-    "deploy:gh": "pnpm run deploy && npx gh-pages -d out"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
