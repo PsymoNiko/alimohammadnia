@@ -6,12 +6,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Conditionally add basePath and assetPrefix only for GitHub Pages
-  ...(isGithubPages && {
-    basePath: '/alimohammadnia',
-    assetPrefix: '/alimohammadnia',
-  }),
-  // Ignore TypeScript and ESLint errors during build (optional but prevents common failures)
+  basePath: isGithubPages ? '/alimohammadnia' : '',
+  assetPrefix: isGithubPages ? '/alimohammadnia' : '',
+  // Optional: Ignore build errors if TypeScript/ESLint are problematic
   typescript: {
     ignoreBuildErrors: true,
   },
