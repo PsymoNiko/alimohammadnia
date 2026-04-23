@@ -9,8 +9,8 @@ const nextConfig = {
   },
   // If you use a custom domain (alimohammadnia.dev), you don't need basePath.
   // If you want the site to also work at psymoniko.github.io/alimohammadnia, add:
-  // basePath: '/alimohammadnia',
-  // assetPrefix: '/alimohammadnia/',
+  basePath: '/alimohammadnia',
+  assetPrefix: '/alimohammadnia/',
   // But with a custom domain, leave them commented or remove them.
   trailingSlash: true,     // Optional but helps with relative links on static hosts
 };
