@@ -8,6 +8,7 @@ import { SkillsMarquee } from "@/components/skills-marquee"
 import { CreativeProjectsGrid } from "@/components/creative-projects-grid"
 import { MouseGradient } from "@/components/mouse-gradient"
 import { LiquidSection } from "@/components/liquid-section"
+import ErrorButton from "@/components/error-button"
 import { Github, Mail, ArrowUpRight, Linkedin } from "lucide-react"
 
 const featuredProjects = [
@@ -149,7 +150,7 @@ export default function Portfolio() {
                   (skill, index) => (
                     <div
                       key={skill}
-                      className="aspect-square rounded-2xl bg-card border border-border flex items-center justify-center p-4 hover:border-primary hover:bg-primary/5 hover:shadow-[0_0_40px_rgba(74,222,128,0.15)] transition-all duration-500 group cursor-default"
+                      className="aspect-square rounded-2xl bg-card border border-border flex items-center justify-center p-4 hover:border-primary hover:bg-primary/5 hover:shadow-[0_0_40px_rgba(74,222,128,0.12)] transition-all"
                       style={{ animationDelay: `${index * 50}ms` }}
                     >
                       <span className="text-xs md:text-sm font-bold text-muted-foreground group-hover:text-primary transition-colors uppercase tracking-wider text-center">
@@ -179,7 +180,7 @@ export default function Portfolio() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
                 <a
                   href="mailto:your.email@example.com"
-                  className="group relative px-10 py-5 bg-primary text-primary-foreground rounded-full font-bold flex items-center gap-3 hover:shadow-[0_0_50px_rgba(74,222,128,0.4)] transition-all duration-500"
+                  className="group relative px-10 py-5 bg-primary text-primary-foreground rounded-full font-bold flex items-center gap-3 hover:shadow-[0_0_50px_rgba(74,222,128,0.4)] transition-all"
                 >
                   <Mail className="w-5 h-5" />
                   <span className="uppercase tracking-[0.15em] text-sm">Start a Project</span>
@@ -189,11 +190,12 @@ export default function Portfolio() {
                   href="https://github.com/PsymoNiko"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group px-10 py-5 border-2 border-border rounded-full font-bold flex items-center gap-3 hover:border-primary hover:text-primary hover:bg-primary/5 transition-all duration-500"
+                  className="group px-10 py-5 border-2 border-border rounded-full font-bold flex items-center gap-3 hover:border-primary hover:text-primary hover:bg-primary/5 transition-all duration-200"
                 >
                   <Github className="w-5 h-5" />
                   <span className="uppercase tracking-[0.15em] text-sm">GitHub</span>
                 </a>
+                <ErrorButton />
               </div>
 
               <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-muted-foreground">
@@ -238,9 +240,7 @@ export default function Portfolio() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="text-muted-foreground text-sm">
-                © {new Date().getFullYear()} Ali Mohammadnia. All rights reserved.
-              </span>
+              <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Ali Mohammadnia. All rights reserved.</span>
               <div className="flex items-center gap-5">
                 <a
                   href="https://github.com/PsymoNiko"
@@ -250,10 +250,7 @@ export default function Portfolio() {
                 >
                   <Github className="w-5 h-5" />
                 </a>
-                <a
-                  href="mailto:your.email@example.com"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary transition-colors">
                   <Mail className="w-5 h-5" />
                 </a>
                 <a
