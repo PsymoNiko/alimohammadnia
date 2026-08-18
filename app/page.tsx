@@ -178,7 +178,7 @@ export default function Portfolio() {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
                 <a
-                  href="callmeali@duck.com"
+                  href="mailto:callmeali@duck.com"
                   className="group relative px-10 py-5 bg-primary text-primary-foreground rounded-full font-bold flex items-center gap-3 hover:shadow-[0_0_50px_rgba(74,222,128,0.4)] transition-all duration-500"
                 >
                   <Mail className="w-5 h-5" />
@@ -198,10 +198,10 @@ export default function Portfolio() {
 
               <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-muted-foreground">
                 <a
-                  href="callmeali@duck.com"
+                  href="mailto:callmeali@duck.com"
                   className="hover:text-primary transition-colors uppercase tracking-[0.2em] text-sm"
                 >
-                  hello@psymoniko.dev
+                  callmeali@duck.com
                 </a>
                 <span className="hidden md:block w-2 h-2 rounded-full bg-primary/50" />
                 <a
@@ -251,7 +251,7 @@ export default function Portfolio() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="callmeali@duck.com"
+                  href="mailto:callmeali@duck.com"
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5" />
