@@ -8,7 +8,7 @@ import { SkillsMarquee } from "@/components/skills-marquee"
 import { CreativeProjectsGrid } from "@/components/creative-projects-grid"
 import { MouseGradient } from "@/components/mouse-gradient"
 import { LiquidSection } from "@/components/liquid-section"
-import { Github, Mail, ArrowUpRight, Linkedin } from "lucide-react"
+import { Github, Mail, ArrowUpRight, Linkedin, Phone } from "lucide-react"
 
 const featuredProjects = [
   {
@@ -204,6 +204,10 @@ export default function Portfolio() {
                   callmeali@duck.com
                 </a>
                 <span className="hidden md:block w-2 h-2 rounded-full bg-primary/50" />
+                <a href="tel:" aria-label="Phone (not provided)" className="hover:text-primary transition-colors text-sm">
+                  <Phone className="w-5 h-5 inline-block" />
+                </a>
+                <span className="hidden md:block w-2 h-2 rounded-full bg-primary/50" />
                 <a
                   href="https://github.com/PsymoNiko"
                   target="_blank"
@@ -238,9 +242,7 @@ export default function Portfolio() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <span className="text-muted-foreground text-sm">
-                © {new Date().getFullYear()} Ali Mohammadnia. All rights reserved.
-              </span>
+              <span className="text-muted-foreground text-sm">© {new Date().getFullYear()} Ali Mohammadnia. All rights reserved.</span>
               <div className="flex items-center gap-5">
                 <a
                   href="https://github.com/PsymoNiko"
@@ -250,11 +252,11 @@ export default function Portfolio() {
                 >
                   <Github className="w-5 h-5" />
                 </a>
-                <a
-                  href="mailto:callmeali@duck.com"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
+                <a href="mailto:callmeali@duck.com" className="text-muted-foreground hover:text-primary transition-colors">
                   <Mail className="w-5 h-5" />
+                </a>
+                <a href="tel:" aria-label="Phone (not provided)" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Phone className="w-5 h-5" />
                 </a>
                 <a
                   href="https://linkedin.com"
