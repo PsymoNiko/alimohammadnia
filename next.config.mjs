@@ -6,8 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isGithubPages ? '/' : '',
-  assetPrefix: isGithubPages ? '/' : '',
+  basePath: isGithubPages ? '/alimohammadnia' : '',
+  assetPrefix: isGithubPages ? '/alimohammadnia' : '',
   // Optional: Ignore build errors if TypeScript/ESLint are problematic
   typescript: {
     ignoreBuildErrors: true,
