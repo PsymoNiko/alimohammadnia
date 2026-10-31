@@ -146,7 +146,7 @@ export function IntroLoader({ onComplete }: IntroLoaderProps) {
       <div
         className={`absolute top-8 right-8 text-xs uppercase tracking-[0.3em] text-muted-foreground transition-all duration-500 ${isExiting ? "opacity-0 translate-x-10" : "opacity-100 translate-x-0"}`}
       >
-        2025
+        2026
       </div>
       <div
         className={`absolute bottom-8 left-8 text-xs uppercase tracking-[0.3em] text-primary transition-all duration-500 ${isExiting ? "opacity-0 -translate-x-10" : "opacity-100 translate-x-0"}`}
@@ -156,7 +156,7 @@ export function IntroLoader({ onComplete }: IntroLoaderProps) {
       <div
         className={`absolute bottom-8 right-8 text-xs uppercase tracking-[0.3em] text-muted-foreground transition-all duration-500 ${isExiting ? "opacity-0 translate-x-10" : "opacity-100 translate-x-0"}`}
       >
-        Full-Stack Developer
+        DevOps & Infrastructure Engineer
       </div>
     </div>
   )

@@ -8,9 +8,23 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Ali Mohammadnia -  PsymoNiko",
-  description: "Platform Engineeer passionate about building innovative web experiences",
-  generator: "v0.app",
+  metadataBase: new URL("https://alimohammadnia.ir"),
+  title: "Ali Mohammadnia | DevOps & Python Backend Engineer",
+  description:
+    "Portfolio of Ali Mohammadnia, focused on DevOps, " +
+    "infrastructure engineering, Python backend development, " +
+    "automation, observability, and reliability.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Ali Mohammadnia | DevOps & Python Backend Engineer",
+    description:
+      "DevOps, infrastructure engineering, Python backend development, automation, observability, and reliability.",
+    url: "https://alimohammadnia.ir",
+    siteName: "Ali Mohammadnia",
+    type: "website",
+  },
   icons: {
     icon: [
       {
