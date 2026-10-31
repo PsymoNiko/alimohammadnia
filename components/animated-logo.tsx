@@ -145,7 +145,7 @@ export function AnimatedLogo({ isVisible }: AnimatedLogoProps) {
             }}
           >
             <p className="text-sm md:text-base uppercase tracking-[0.4em] text-muted-foreground">
-              Full-Stack Developer & Designer
+              DevOps & Infrastructure Engineer
             </p>
           </div>
         </div>
