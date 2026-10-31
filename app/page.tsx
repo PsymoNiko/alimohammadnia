@@ -167,7 +167,7 @@ export default function Portfolio() {
                   <span className="text-primary">operating</span>
                 </h2>
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-10">
-                  {"I'm Ali — a Python backend engineer with a DevOps and infrastructure focus. I build, deploy, and operate backend systems and production infrastructure, with attention to automation, observability, performance, and reliability — working toward SRE practices."}
+                  {"I'm Ali — علی محمدنیا — a Python backend engineer with a DevOps and infrastructure focus. I build, deploy, and operate backend systems and production infrastructure, with attention to automation, observability, performance, and reliability — working toward SRE practices."}
                 </p>
                 <ul className="space-y-6">
                   {aboutThemes.map((theme) => (
