@@ -3,15 +3,13 @@
 import type React from "react"
 
 import { useRef, useState } from "react"
-import { Star, GitFork, ExternalLink, ArrowRight } from "lucide-react"
+import { ExternalLink, ArrowRight } from "lucide-react"
 
 interface Project {
   name: string
   description: string
   image: string
   language: string
-  stars: number
-  forks: number
   url: string
   tags: string[]
 }
@@ -27,6 +25,9 @@ const languageColors: Record<string, string> = {
   Go: "#00ADD8",
   Rust: "#dea584",
   Java: "#b07219",
+  Dockerfile: "#384d54",
+  Shell: "#89e051",
+  YAML: "#cb171e",
 }
 
 export function CreativeProjectsGrid({ projects }: CreativeProjectsGridProps) {
@@ -57,7 +58,7 @@ export function CreativeProjectsGrid({ projects }: CreativeProjectsGridProps) {
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground text-lg">
-            A curated showcase of my best work, from web applications to developer tools.
+            Real infrastructure, backend, streaming, and observability work — architectures and results, not placeholder metrics.
           </p>
         </div>
       </div>
@@ -129,18 +130,6 @@ export function CreativeProjectsGrid({ projects }: CreativeProjectsGridProps) {
                         style={{ backgroundColor: languageColors[project.language] || "#888" }}
                       />
                       <span className="text-sm font-semibold text-foreground">{project.language}</span>
-                    </div>
-
-                    {/* Stats */}
-                    <div className="absolute bottom-4 right-6 flex items-center gap-4 px-4 py-2 rounded-full bg-background/90 backdrop-blur-sm text-foreground/80">
-                      <span className="flex items-center gap-1.5 text-sm">
-                        <Star className="w-4 h-4 text-yellow-500" />
-                        {project.stars}
-                      </span>
-                      <span className="flex items-center gap-1.5 text-sm">
-                        <GitFork className="w-4 h-4" />
-                        {project.forks}
-                      </span>
                     </div>
                   </div>
 

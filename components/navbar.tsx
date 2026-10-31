@@ -1,11 +1,12 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Github, Menu, X, Mail } from "lucide-react"
+import { Github, Menu, X, Mail, Linkedin } from "lucide-react"
 
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#work", label: "Work" },
+  { href: "#experience", label: "Experience" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ]
@@ -69,7 +70,16 @@ export function Navbar({ isVisible = true }: NavbarProps) {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="https://www.linkedin.com/in/psymoniko/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="p-2.5 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href="mailto:alimohammadnia127@gmail.com"
               className="p-2.5 rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-all duration-300"
             >
               <Mail className="w-5 h-5" />
@@ -127,7 +137,16 @@ export function Navbar({ isVisible = true }: NavbarProps) {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="https://www.linkedin.com/in/psymoniko/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="p-3 border border-border rounded-full text-muted-foreground hover:text-primary hover:border-primary transition-all"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a
+              href="mailto:alimohammadnia127@gmail.com"
               className="p-3 border border-border rounded-full text-muted-foreground hover:text-primary hover:border-primary transition-all"
             >
               <Mail className="w-6 h-6" />

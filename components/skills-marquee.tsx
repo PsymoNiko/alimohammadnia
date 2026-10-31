@@ -3,23 +3,21 @@
 import { Marquee } from "./marquee"
 
 const skills = [
-  "REACT",
-  "NEXT.JS",
-  "TYPESCRIPT",
-  "NODE.JS",
   "PYTHON",
-  "TAILWIND",
-  "POSTGRESQL",
-  "MONGODB",
+  "DJANGO",
   "DOCKER",
-  "AWS",
-  "GRAPHQL",
-  "GIT",
   "LINUX",
-  "KUBERNETES",
+  "NGINX",
+  "GITLAB CI/CD",
+  "POSTGRESQL",
+  "REDIS",
+  "PROMETHEUS",
+  "GRAFANA",
+  "ANSIBLE",
+  "GIT",
 ]
 
-const tools = ["VS CODE", "GITHUB", "FIGMA", "VERCEL", "PRISMA", "REDIS", "NGINX", "JEST"]
+const tools = ["HARBOR", "NEXUS", "ELK", "SENTRY", "RABBITMQ", "KAFKA", "NODE EXPORTER", "GITHUB"]
 
 export function SkillsMarquee() {
   return (
