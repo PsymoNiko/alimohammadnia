@@ -44,6 +44,33 @@ export const metadata: Metadata = {
   },
 }
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ali Mohammadnia",
+  alternateName: ["علی محمدنیا", "PsymoNiko"],
+  url: "https://alimohammadnia.ir",
+  email: "alimohammadnia127@gmail.com",
+  jobTitle: "DevOps & Infrastructure Engineer",
+  knowsAbout: [
+    "DevOps",
+    "Infrastructure Engineering",
+    "Python",
+    "Django",
+    "Docker",
+    "Linux",
+    "Nginx",
+    "GitLab CI/CD",
+    "Prometheus",
+    "Grafana",
+  ],
+  sameAs: [
+    "https://github.com/PsymoNiko",
+    "https://www.linkedin.com/in/psymoniko/",
+    "https://beanscoin.cafe",
+  ],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,6 +79,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         {children}
         <Analytics />
       </body>
